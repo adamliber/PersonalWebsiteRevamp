@@ -6,11 +6,14 @@ $('a').click(function(){
 			$('html, body').animate({
 
 				scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-				
+
 			}, 1000);
 			return false;
 });
 
+$('.navbar-collapse ul li a').on('click', function(){
+    $('.navbar-collapse').collapse('hide'); //bootstrap 4.x
+});
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip();
@@ -24,18 +27,13 @@ $(function () {
 wow.init();
 });
 
-
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
 
-
 window.onscroll = function() {
   scrolldown();
 };
-
-
-
 
 var navbar = document.querySelector(".navbar");
 var dropdown = document.querySelector(".dropdown-menu");
@@ -45,48 +43,36 @@ var navOffSet = navbar.offsetTop;
 
 function scrolldown() {
 
-  if (window.pageYOffset >= navOffSet) {
-
-
-		dropdown.classList.add("bg-secondary");
-
-
+  if (window.pageYOffset >= navOffSet)
+	{
     container.classList.add("stickyNavOffset");
-
-
 		navbar.classList.add("fixed-top");
-
     navbar.style.backgroundColor = "#21252B";
 
-
-
-
-
-    if(window.pageYOffset > navOffSet+40){
+    if(window.pageYOffset > navOffSet+40)
+		{
       headshot.style.height = "50px";
-    }else{
+    }
+		else
+		{
        headshot.style.height = "80px";
     }
     document.querySelector("#backToTop").style.display = "block";
 
-  } else {
-
-		dropdown.classList.remove("bg-secondary");
-
-
+  }
+	else
+	{
     navbar.classList.remove("fixed-top");
   	navbar.style.backgroundColor = "";
-
     container.classList.remove("stickyNavOffset");
-
-
     document.querySelector("#backToTop").style.display = "none";
   }
 
 }
 
 
-$('#modal').on('show.bs.modal', function (event) {
+$('#modal').on('show.bs.modal', function (event)
+{
   var button = $(event.relatedTarget); // Button that triggered the modal
   var projectName = button.data('project'); // Extract info from data-* attributes
 	var projectInfo = $("#" + projectName);
@@ -97,10 +83,9 @@ $('#modal').on('show.bs.modal', function (event) {
 	modal.find('.modal-body').html(projectInfo.clone() );
 
 });
-$('#modal').on('hide.bs.modal', function (event) {
 
+$('#modal').on('hide.bs.modal', function (event)
+{
   var modal = $(this);
 	modal.find('.modal-body').html('');
-
-
 });

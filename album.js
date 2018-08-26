@@ -28,7 +28,7 @@ wow.init();
 });
 
 window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
 };
 
 window.onscroll = function() {
@@ -70,6 +70,15 @@ function scrolldown() {
 
 }
 
+$('#resumeLink').on('click', function(){
+
+	ga('send', 'event', {
+	    eventCategory: 'resume',
+	    eventAction: 'click',
+	    eventLabel: event.target.href
+	  });
+
+});
 
 $('#modal').on('show.bs.modal', function (event)
 {

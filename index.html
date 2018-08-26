@@ -2,9 +2,19 @@
 <html lang="en">
 
 <head>
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124627939-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-124627939-1');
+  </script>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules\mdbootstrap\css\mdb.min.css" />
@@ -52,14 +62,14 @@
               projects
             </a>
             <div class="dropdown-menu text-right text-md-left w-25 ml-auto bg-dark" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item text-light" href="#professional">professional</a>
-              <a class="dropdown-item text-light" href="#personal">personal</a>
+              <a class="dropdown-item text-light" href="#technical">technical</a>
+              <a class="dropdown-item text-light" href="#creative">creative</a>
             </div>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="AdamLiberResume.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true" ></i> resum&eacute</a>
+            <a id="resumeLink" class="nav-link" href="https://drive.google.com/open?id=1Ql4vpgelN3g1aTxb9NSXKtsaHqUmdBPr" target="_blank"><i class="fa fa-download" aria-hidden="true" ></i> resum&eacute</a>
           </li>
           <li class="row nav-item justify-content-end justify-content-md-start text-center ml-2 ">
             <a class="col-1 col-md-3 nav-link waves-effect waves-light" href="mailto:aliber@usc.edu" data-toggle="tooltip" data-placement="bottom" title="email Adam"> <i class="fa fa-envelope-o"></i></a>
@@ -75,9 +85,10 @@
 
     <div class="container">
       <div>
-        <h3 class="mt-4 text-center text-light" id="timeline">about me</h3>
+        <h3 class="mt-4 text-center text-light font-weight-light" id="timeline">about me</h3>
       </div>
       <ul class="timeline">
+        <!-- AUP timeline panel -->
         <li>
           <div class="timeline-badge text-light animate wow fadeInDown"  data-wow-offset="80">
             <p>2014</p>
@@ -85,20 +96,20 @@
           <div class="timeline-panel text-light wow animate slideInLeft" data-wow-offset="80">
             <img class="img-fluid" src="miscimages/aup.jpg" />
             <div class="timeline-heading">
-              <small class="text-muted float-right">Aug 2014 - May 2015</small>
+              <small class="text-muted float-right ml-1">Aug 2014 - May 2015</small>
               <h4 class="timeline-title">American University of Paris</h4>
 
             </div>
             <div class="timeline-body">
               <p>
-                 After graduating Highschool I moved to Paris to study and gain some worldly experience.
+                My college career began in Paris. I studied  art, mathematics, and anthropology while exploring europe through many university cultural excursions.
                  <a class="text-info" >Read more...</a>
               </p>
             </div>
           </div>
 
         </li>
-
+        <!-- usc timeline panel -->
         <li class="timeline-inverted">
           <div class="timeline-badge text-light animate wow fadeInDown"  data-wow-offset="80">
             <p>2015</p>
@@ -111,12 +122,13 @@
             </div>
             <div class="timeline-body">
               <p>
-                After paris I returned to Los Angeles to study Mechanical Engineering at the USC Viterbi School of Engineering.
+                Returning to Los Angeles to study engineering, I quickly refocused on technical skills. With my budding passion for innovation I decided to pursue a degree in Computer Science.
                 <a class="text-info" >Read more...</a>
               </p>
             </div>
           </div>
         </li>
+        <!-- hasbro timeline panel -->
         <li>
           <div class="timeline-badge text-light animate wow fadeInDown" data-wow-offset="80">
             <p>2016</p>
@@ -131,10 +143,12 @@
 
               <p>
                 For 6 months I worked full time as a Project Engineer Co-op for the largest american toy and entertainment company Hasbro, known for Transformers, Monopoly, Nerf, and My Little Pony.
+                <a class="text-info" >Read more...</a>
               </p>
             </div>
           </div>
         </li>
+        <!-- 12twenty timeline panel -->
         <li class="timeline-inverted">
           <div class="timeline-badge text-light animate wow fadeInDown" data-wow-offset="80">
             <p>2017</p>
@@ -142,19 +156,18 @@
           <div class="timeline-panel text-light wow animate slideInRight" data-wow-offset="80">
             <img class="img-fluid" src="miscimages/12twentyteam.jpg" />
             <div class="timeline-heading">
-              <small class="text-muted float-right"><i class="glyphicon glyphicon-time"></i>June-September</small>
+              <small class="text-muted float-right">June-September 2017 </small>
               <h4 class="timeline-title">12Twenty Inc.</h4>
               <a class="text-info">Website</a>
             </div>
             <div class="timeline-body">
               <p>
-                Provided quality assurance for 100+ university web applications with 1M+ users
-                Transitioned 1300+ testcases to new software management system
-                Introduced new requirement documentation workflow and automated KPI tracking
+                I dove into the local Santa Monica startup scene I provided quality assurance for 100+ university web applications with 1M+ users
               </p>
             </div>
           </div>
         </li>
+        <!-- Visa timeline panel -->
         <li>
           <div class="timeline-badge text-light animate wow fadeInDown" data-wow-offset="80">
             <p>2018</p>
@@ -162,7 +175,7 @@
           <div class="timeline-panel text-light wow animate slideInLeft" data-wow-offset="80">
             <img class="img-fluid" src="miscimages/visaWall1.jpg" />
             <div class="timeline-heading">
-              <small class="text-muted float-right"><i class="glyphicon glyphicon-time"></i>June-August</small>
+              <small class="text-muted float-right"><i class="glyphicon glyphicon-time"></i>June-August 2018</small>
               <h4 class="timeline-title">Visa Inc.</h4>
             </div>
             <div class="timeline-body">
@@ -170,8 +183,11 @@
                  Won 2nd Prize at Hackathon, invented a feature to be implemented in production
                  Developed tools for API test automation, log parsing, and issue reporting
                  Presented informational training on OAuth 2.0 and demoed the first test of its kind
-                 <a class="text-info" >Read more...</a>
+                 <a class="text-info" data-toggle="collapse" href="#visaCollapse">Read more...</a>
               </p>
+              <div class="collapse" id="visaCollapse">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
             </div>
           </div>
         </li>
@@ -194,14 +210,14 @@
         </div>
       </div>
 
-      <a name="professional"></a>
+      <a name="technical"></a>
       <div class="album py-5">
         <div>
-          <h3 class="m-4 text-center text-light" id="projects">projects</h3>
+          <h3 class="m-4 text-center text-light font-weight-light" id="projects">projects</h3>
 
         </div>
         <div>
-          <h6 class="m-4 text-center text-light" style=" border-bottom: 1px solid #6c757d; line-height:0.1em; margin:10px 0 20px;"  id="professional"><span style="background:#282C34; padding:0 20px;">professional</span></h6>
+          <h6 class="m-4 text-center text-light font-weight-light" style=" border-bottom: 1px solid #6c757d; line-height:0.1em; margin:10px 0 20px;"  id="technical"><span style="background:#282C34; padding:0 20px;">technical</span></h6>
         </div>
         <div class="row">
           <!-- Mobile project -->
@@ -345,9 +361,9 @@
 
         </div>
         <!-- row1 -->
-        <a name="personal"></a>
+        <a name="creative"></a>
         <div>
-          <h6 class="m-4 text-center text-light" style=" border-bottom: 1px solid #6c757d; line-height:0.1em; margin:10px 0 20px;"  id="personal"><span style="background:#282C34; padding:0 20px;">personal</span></h6>
+          <h6 class="m-4 text-center text-light font-weight-light" style=" border-bottom: 1px solid #6c757d; line-height:0.1em; margin:10px 0 20px;"  id="creative"><span style="background:#282C34; padding:0 20px;">creative</span></h6>
         </div>
         <div class="row">
 
@@ -356,21 +372,30 @@
             <div class="card mb-4 border-0">
 
               <div id="graphicProjects" class="carousel slide card-img-top" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#graphicProjects" data-slide-to="0" class="active"></li>
+                  <li data-target="#graphicProjects" data-slide-to="1"></li>
+                  <li data-target="#graphicProjects" data-slide-to="2"></li>
+                  <li data-target="#graphicProjects" data-slide-to="3"></li>
+                  <li data-target="#graphicProjects" data-slide-to="4"></li>
+                  <li data-target="#graphicProjects" data-slide-to="5"></li>
+                  <li data-target="#graphicProjects" data-slide-to="6"></li>
+                </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item active h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/catchawave.png" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/catchawave.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/headbump.png" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/headbump.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/joojoo.png" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/joojoo.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/konnect2.png" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/cvam.png" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/cvam.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/lakersNow.png" alt="First slide">
@@ -393,7 +418,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-light text-left">Graphic Design</small>
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Details </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modal" data-project="graphicProjects">View </button>
 
                   </div>
 
@@ -401,11 +426,17 @@
               </div>
             </div>
           </div>
-
           <!-- writing projects -->
           <div class="col-sm-6 col-lg-4 animated wow fadeIn" data-wow-delay="0.4s" data-wow-offset="80">
             <div class="card mb-4 border-0">
-              <div id="caro" class="carousel slide card-img-top" data-ride="carousel">
+              <div id="writingProjects" class="carousel slide card-img-top" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#writingProjects" data-slide-to="0" class="active"></li>
+                  <li data-target="#writingProjects" data-slide-to="1"></li>
+                  <li data-target="#writingProjects" data-slide-to="2"></li>
+                  <li data-target="#writingProjects" data-slide-to="3"></li>
+                  <li data-target="#writingProjects" data-slide-to="4"></li>
+                </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item h-100 active">
                     <img class="d-block mx-auto mh-100 mw-100" src="writingimages/leger.jpg" alt="First slide">
@@ -416,7 +447,6 @@
                   <div class="carousel-item h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="writingimages/boy_bitten_by_a_lizard.jpg" alt="First slide">
                   </div>
-
                   <div class="carousel-item h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="writingimages/noexit.jpg" alt="First slide">
                   </div>
@@ -424,12 +454,20 @@
                     <img class="d-block mx-auto mh-100 mw-100" src="writingimages/thejoker.jpg" alt="First slide">
                   </div>
                 </div>
+                <a class="carousel-control-prev" href="#writingProjects" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#writingProjects" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-light text-left">Writing</small>
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary " data-toggle="modal" data-target="#modal" data-project="writingProjects">View</button>
 
                   </div>
 
@@ -437,12 +475,17 @@
               </div>
             </div>
           </div>
-
-
           <!-- blender projects -->
           <div class="col-sm-6 col-lg-4 animated wow fadeIn" data-wow-delay="0.8s" data-wow-offset="80">
             <div class="card mb-4 border-0">
-              <div id="caro" class="carousel slide card-img-top" data-ride="carousel">
+              <div id="blenderProjects" class="carousel slide card-img-top" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#blenderProjects" data-slide-to="0" class="active"></li>
+                  <li data-target="#blenderProjects" data-slide-to="1"></li>
+                  <li data-target="#blenderProjects" data-slide-to="2"></li>
+                  <li data-target="#blenderProjects" data-slide-to="3"></li>
+                  <li data-target="#blenderProjects" data-slide-to="4"></li>
+                </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item active h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="blender3D/cup.png" alt="First slide">
@@ -458,12 +501,21 @@
                   </div>
 
                 </div>
+                <a class="carousel-control-prev" href="#blenderProjects" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#blenderProjects" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
+
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-light">3D Modeling</small>
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modal" data-project="blenderProjects">View</button>
                   </div>
                 </div>
               </div>
@@ -472,10 +524,10 @@
           <!-- AG4P video -->
           <div class="col-sm-6 col-lg-4 animated wow fadeIn" data-wow-delay="0s" data-wow-offset="80">
             <div class="card mb-4 border-0">
-              <div class="card-img-top">
+              <div id="ag4p" class="card-img-top">
 
                 <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/U3cY5nc1kug" allowfullscreen></iframe>
+                  <iframe src="https://www.youtube.com/embed/U3cY5nc1kug" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
 
               </div>
@@ -483,7 +535,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-light text-left">Creative Video</small>
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modal" data-project="ag4p">View</button>
                   </div>
                 </div>
               </div>
@@ -518,6 +570,7 @@
   <!-- MDB core JavaScript -->
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
 
 
 </body>

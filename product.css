@@ -21,7 +21,7 @@ main{
   height: 5px;
   /* margin-bottom: 5px; */
   border: 1px solid rgba(108,117,125,0.7);
-  border-radius: 5px;
+  border-radius: 2.5px;
   background-color: transparent;
   color: transparent;
 
@@ -35,8 +35,6 @@ main{
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
-
-
 
 .navbar-brand img{
   transition:height 0.2s ease-in;

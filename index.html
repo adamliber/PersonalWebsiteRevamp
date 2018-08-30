@@ -17,13 +17,14 @@
   </script>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="node_modules\mdbootstrap\css\mdb.min.css" />
+  <link rel="stylesheet" href="css/mdb.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet"> -->
 
-  <link href="product.css" rel="stylesheet">
-  <link href="timeline.css" rel="stylesheet">
+  <link href="css/product.css" rel="stylesheet">
+  <link href="css/timeline.css" rel="stylesheet">
   <title>Adam Liber</title>
 </head>
 
@@ -33,7 +34,7 @@
   <main>
     <a name="0"></a>
     <div class="jumbotron rounded-0 parallax">
-      <div id="jumbotronText">
+      <div id="jumbotronText" class="animate wow fadeIn">
         <h1 class="display-4 text-white">Hi, I'm Adam!</h1>
         <p class="lead text-white">This is my website I designed and built for both personal and professional projects.</p>
         <hr class="my-1 bg-white">
@@ -45,7 +46,7 @@
     <nav class="navbar navbar-dark navbar-expand-md" id="header">
 
       <a class="navbar-brand" href="#">
-        <img src="miscimages/headshot.jpg" style="margin-right: 15px;" height="80" class="d-inline-block align-middle rounded-circle" alt="">
+        <img src="media/miscimages/headshot.jpg" style="margin-right: 15px;" height="80" class="d-inline-block align-middle rounded-circle" alt="">
          Adam Liber
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,24 +59,24 @@
             <a class="nav-link" href="#about"  data-toggle="collapse" data-target=".navbar-collapse">about</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               projects
             </a>
             <div class="dropdown-menu text-right text-md-left w-25 ml-auto bg-dark" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item text-light" href="#technical">technical</a>
-              <a class="dropdown-item text-light" href="#creative">creative</a>
+              <a class="dropdown-item text-light nav-link" href="#technical">technical</a>
+              <a class="dropdown-item text-light nav-link" href="#creative">creative</a>
             </div>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a id="resumeLink" class="nav-link" href="https://drive.google.com/open?id=1Ql4vpgelN3g1aTxb9NSXKtsaHqUmdBPr" target="_blank"><i class="fa fa-download" aria-hidden="true" ></i> resum&eacute</a>
+            <a id="resumeLink" class="nav-link" href="https://drive.google.com/open?id=1Ql4vpgelN3g1aTxb9NSXKtsaHqUmdBPr" target="_blank"><i class="fas fa-download" aria-hidden="true" ></i> resum&eacute</a>
           </li>
           <li class="row nav-item justify-content-end justify-content-md-start text-center ml-2 ">
-            <a class="col-1 col-md-3 nav-link waves-effect waves-light" href="mailto:aliber@usc.edu" data-toggle="tooltip" data-placement="bottom" title="email Adam"> <i class="fa fa-envelope-o"></i></a>
-            <a class="col-1 col-md-3 nav-link waves-effect waves-light" href="https://www.linkedin.com/in/adamliber/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-            <a class="col-1 col-md-3 nav-link waves-effect waves-light" href="https://github.com/adamliber" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fa fa-github"></i></a>
-            <a class="col-1 col-md-3 nav-link waves-effect waves-light" href="https://www.facebook.com/adamg.liber" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a class="col-1 col-md-3 nav-link waves-effect waves-light" href="mailto:aliber@usc.edu" data-toggle="tooltip" data-placement="bottom" title="email Adam"> <i class="far fa-envelope"></i></a>
+            <a class="col-1 col-md-3 nav-link waves-effect waves-light" href="https://www.linkedin.com/in/adamliber/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+            <a class="col-1 col-md-3 nav-link waves-effect waves-light" href="https://github.com/adamliber" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fab fa-github"></i></a>
+            <a class="col-1 col-md-3 nav-link waves-effect waves-light" href="https://www.facebook.com/adamg.liber" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fab fa-facebook"></i></a>
           </li>
         </ul>
       </div>
@@ -90,20 +91,19 @@
       <ul class="timeline">
         <!-- AUP timeline panel -->
         <li>
-          <div class="timeline-badge text-light animate wow fadeInDown"  data-wow-offset="80">
+          <div class="timeline-badge text-light animate wow fadeInDown"  data-wow-offset="100">
             <p>2014</p>
           </div>
           <div class="timeline-panel text-light wow animate slideInLeft" data-wow-offset="80">
-            <img class="img-fluid" src="miscimages/aup.jpg" />
+            <img class="img-fluid" src="media/miscimages/aup.jpg" />
             <div class="timeline-heading">
-              <small class="text-muted float-right ml-1">Aug 2014 - May 2015</small>
+              <small class="text-muted float-right ml-1"> <i class="far fa-calendar" aria-hidden="true" ></i> Aug 2014 - May 2015 <br /> <i class="fas fa-map-marker-alt"></i> Paris, France </small>
               <h4 class="timeline-title">American University of Paris</h4>
 
             </div>
             <div class="timeline-body">
               <p>
                 My college career began in Paris. I studied  art, mathematics, and anthropology while exploring europe through many university cultural excursions.
-                 <a class="text-info" >Read more...</a>
               </p>
             </div>
           </div>
@@ -111,54 +111,57 @@
         </li>
         <!-- usc timeline panel -->
         <li class="timeline-inverted">
-          <div class="timeline-badge text-light animate wow fadeInDown"  data-wow-offset="80">
+          <div class="timeline-badge text-light animate wow fadeInDown"  data-wow-offset="100">
             <p>2015</p>
           </div>
           <div class="timeline-panel text-light wow animate slideInRight"  data-wow-offset="80">
-            <img class="img-fluid" src="miscimages/viterbi.jpg" />
+            <img class="img-fluid" src="media/miscimages/Viterbi.jpg" />
             <div class="timeline-heading">
-              <small class="text-muted float-right">Graduating May 2019</small>
+              <small class="text-muted float-right"><i class="far fa-calendar" aria-hidden="true" ></i> Graduating May 2019 <br /> <i class="fas fa-map-marker-alt"></i> Los Angeles, CA</small>
               <h4 class="timeline-title">University of Southern California</h4>
             </div>
             <div class="timeline-body">
               <p>
-                Returning to Los Angeles to study engineering, I quickly refocused on technical skills. With my budding passion for innovation I decided to pursue a degree in Computer Science.
-                <a class="text-info" >Read more...</a>
+                To study engineering I returned to Los Angeles and quickly refocused on technical skills. With my budding passion for innovation I decided to pursue a degree in Computer Science. </i>
               </p>
             </div>
           </div>
         </li>
         <!-- hasbro timeline panel -->
         <li>
-          <div class="timeline-badge text-light animate wow fadeInDown" data-wow-offset="80">
+          <div class="timeline-badge text-light animate wow fadeInDown" data-wow-offset="100">
             <p>2016</p>
           </div>
           <div class="timeline-panel text-light wow animate slideInLeft" data-wow-offset="80">
-            <img class="img-fluid" src="miscimages/HasbroTeam.jpg" />
+            <img class="img-fluid" src="media/miscimages/HasbroTeam.jpg" />
             <div class="timeline-heading">
-              <small class="text-muted float-right"><i class="glyphicon glyphicon-time"></i>July - December 2016</small>
+              <small class="text-muted float-right"> <i class="far fa-calendar" aria-hidden="true" ></i> July - December 2016  <br /> <i class="fas fa-map-marker-alt"></i> Burbank CA</small>
               <h4 class="timeline-title">Hasbro Inc.</h4>
             </div>
             <div class="timeline-body">
-
               <p>
-                For 6 months I worked full time as a Project Engineer Co-op for the largest american toy and entertainment company Hasbro, known for Transformers, Monopoly, Nerf, and My Little Pony.
-                <a class="text-info" >Read more...</a>
+                For 6 months I worked full time as a Project Engineer Co-op for the largest american toy and entertainment company Hasbro, known for Transformers, Monopoly, Nerf, and My Little Pony. Personally I worked primarily on Disney Princess <i class="fa fa-crown" aria-hidden="true" ></i>  licensed brands.
               </p>
+              <div class="collapse" id="hasbroCollapse">
+                Working as the engineer on the most cross-functional teams alongside product management, design, packaging, costing, finance, copy-writing, and marketing I gained a wholistic experience of retail product design.
+                My role was largely to act as a liaison between design and manufacturing.
+              </div>
+              <a class="text-info readMore"  data-toggle="collapse" href="#hasbroCollapse"> read more <i class="fa fa-angle-down" aria-hidden="true" ></i> </a>
+
             </div>
           </div>
         </li>
         <!-- 12twenty timeline panel -->
         <li class="timeline-inverted">
-          <div class="timeline-badge text-light animate wow fadeInDown" data-wow-offset="80">
+          <div class="timeline-badge text-light animate wow fadeInDown" data-wow-offset="100">
             <p>2017</p>
           </div>
           <div class="timeline-panel text-light wow animate slideInRight" data-wow-offset="80">
-            <img class="img-fluid" src="miscimages/12twentyteam.jpg" />
+            <img class="img-fluid" src="media/miscimages/12twentyteam.jpg" />
             <div class="timeline-heading">
-              <small class="text-muted float-right">June-September 2017 </small>
+              <small class="text-muted float-right"> <i class="far fa-calendar" aria-hidden="true" ></i> June-September 2017 <br />  <i class="fas fa-map-marker-alt"></i> Santa Monica, CA  </small>
               <h4 class="timeline-title">12Twenty Inc.</h4>
-              <a class="text-info">Website</a>
+              <a class="text-info"> <i class="fa fa-globe" aria-hidden="true" ></i> Website </a>
             </div>
             <div class="timeline-body">
               <p>
@@ -169,25 +172,47 @@
         </li>
         <!-- Visa timeline panel -->
         <li>
-          <div class="timeline-badge text-light animate wow fadeInDown" data-wow-offset="80">
+          <div class="timeline-badge text-light animate wow fadeInDown" data-wow-offset="100">
             <p>2018</p>
           </div>
           <div class="timeline-panel text-light wow animate slideInLeft" data-wow-offset="80">
-            <img class="img-fluid" src="miscimages/visaWall1.jpg" />
+            <img class="img-fluid" src="media/miscimages/visaWall1.jpg" />
             <div class="timeline-heading">
-              <small class="text-muted float-right"><i class="glyphicon glyphicon-time"></i>June-August 2018</small>
+              <small class="text-muted float-right">  <i class="far fa-calendar" aria-hidden="true" ></i> June-August 2018 <br />  <i class="fas fa-map-marker-alt"></i> Bellevue WA </small>
               <h4 class="timeline-title">Visa Inc.</h4>
             </div>
             <div class="timeline-body">
               <p>
-                 Won 2nd Prize at Hackathon, invented a feature to be implemented in production
-                 Developed tools for API test automation, log parsing, and issue reporting
-                 Presented informational training on OAuth 2.0 and demoed the first test of its kind
-                 <a class="text-info" data-toggle="collapse" href="#visaCollapse">Read more...</a>
+
+                 For Summer 2018 I moved to Seattle to work for VISA, the premier payment technology company. I developed tools for API test automation, log parsing, and issue reporting for
+                 the Site Reliablity Engineering team.
               </p>
-              <div class="collapse" id="visaCollapse">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              <p>
+                <b>Won 2nd Prize <i class="fa fa-trophy" aria-hidden="true" ></i> at the Hackathon </b>
+              </p>
+               <a class="text-info readMore" data-toggle="collapse" href="#visaCollapse"> read more  <i class="fa fa-angle-down" aria-hidden="true" ></i> </a>
+              <div class="collapse mt-3" id="visaCollapse">
+                <h5>Visa Global Hackathon (Bellevue)</h5>
+                  <figure class="figure">
+                    <img class="figure-img img-fluid w-75 pl-2" src="media/miscimages/visaHackathon1.jpg" />
+                    <figcaption class="figure-caption pl-2">
+                     <i class="far fa-clock" aria-hidden="true" ></i> 32 hour (all-nighter) team hacking session
+                   </figcaption>
+                  </figure>
+                  <figure class="figure">
+                    <img class="figure-img img-fluid w-75 pl-2" src="media/miscimages/visaHackathon2.png" />
+                    <figcaption class="figure-caption pl-2">
+                     Me presenting the feature pitch to executive commitee and judges panel
+                   </figcaption>
+                  </figure>
+                  <figure class="figure">
+                    <img class="figure-img img-fluid w-75 pl-2" src="media/miscimages/visaHackathon3.png" />
+                    <figcaption class="figure-caption pl-2">
+                    Taking the stage during winners announcement ceremony
+                   </figcaption>
+                  </figure>
               </div>
+
             </div>
           </div>
         </li>
@@ -201,8 +226,8 @@
       <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
-            <div class="modal-footer bg-transparent fixed-top">
-              <button type="button " class="btn btn-sm" data-dismiss="modal"><span class="h6" aria-hidden="true">&times;</span></button>
+            <div class="modal-header bg-transparent fixed-top">
+              <button type="button" class="btn btn-sm ml-auto text-light bg-dark" data-dismiss="modal"><span class="h6" aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body"> </div>
 
@@ -214,7 +239,6 @@
       <div class="album py-5">
         <div>
           <h3 class="m-4 text-center text-light font-weight-light" id="projects">projects</h3>
-
         </div>
         <div>
           <h6 class="m-4 text-center text-light font-weight-light" style=" border-bottom: 1px solid #6c757d; line-height:0.1em; margin:10px 0 20px;"  id="technical"><span style="background:#282C34; padding:0 20px;">technical</span></h6>
@@ -226,7 +250,7 @@
               <div id="mobileProject" class="card-img-top">
 
                 <div class="embed-responsive embed-responsive-16by9 d-block my-auto">
-                  <video src="loanerAppDemo.mov" controls></video>
+                  <video src="media/loanerAppDemo.mov" controls></video>
                 </div>
 
               </div>
@@ -255,19 +279,19 @@
                 </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item active h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="hasbro/moanaColor.jpg">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/hasbro/moanaColor.jpg">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="hasbro/arielTail.jpg">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/hasbro/arielTail.jpg">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="hasbro/frozenIceSkating.jpg">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/hasbro/frozenIceSkating.jpg">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="hasbro/rapunzelCastle.jpg">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/hasbro/rapunzelCastle.jpg">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="hasbro/frozenIceShaver.jpg">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/hasbro/frozenIceShaver.jpg">
                   </div>
 
                 </div>
@@ -296,8 +320,7 @@
             <div class="card mb-4 border-0">
               <div id="marshallProjects" class="card-img-top">
 
-                <img class="d-block mx-auto mh-100 mw-100" src="miscimages/marshallMatters2.png" alt="First slide">
-
+                <img class="d-block mx-auto mh-100 mw-100" src="media/miscimages/marshallMatters2.PNG" alt="First slide">
 
               </div>
               <div class="card-body">
@@ -325,16 +348,16 @@
                 </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item active h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="matlab/hawaiinavigator.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/matlab/hawaiinavigator.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item  h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="matlab/leadgraph.jpg" alt="Second slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/matlab/leadgraph.jpg" alt="Second slide">
                   </div>
                   <div class="carousel-item  h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="matlab/tumormodel.jpg" alt="Third slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/matlab/tumormodel.jpg" alt="Third slide">
                   </div>
                   <div class="carousel-item  h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="matlab/explodingprojectile.jpg" alt="Fourth slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/matlab/explodingprojectile.jpg" alt="Fourth slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev " href="#matlabProjects" role="button" data-slide="prev">
@@ -383,25 +406,25 @@
                 </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item active h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/catchawave.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/catchawave.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/headbump.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/headbump.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/joojoo.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/joojoo.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/konnect2.png" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/konnect2.png" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/cvam.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/cvam.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/lakersNow.png" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/lakersNow.png" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="graphicdesignlogos/panther.png" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/panther.png" alt="First slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#graphicProjects" role="button" data-slide="prev">
@@ -439,19 +462,19 @@
                 </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item h-100 active">
-                    <img class="d-block mx-auto mh-100 mw-100" src="writingimages/leger.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/leger.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="writingimages/bauhaus.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/bauhaus.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="writingimages/boy_bitten_by_a_lizard.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/boy_bitten_by_a_lizard.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="writingimages/noexit.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/noexit.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="writingimages/thejoker.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/thejoker.jpg" alt="First slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#writingProjects" role="button" data-slide="prev">
@@ -488,16 +511,16 @@
                 </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item active h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="blender3D/cup.png" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/blender3D/cup.png" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="blender3D/ball2.png" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/blender3D/ball2.png" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="blender3D/city1.png" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/blender3D/city1.png" alt="First slide">
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="blender3D/robot.png" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/blender3D/robot.png" alt="First slide">
                   </div>
 
                 </div>
@@ -552,10 +575,10 @@
     </div>
     <!-- container -->
 
-    <div class="fixed-bottom ml-auto text-center" style="height: 50px !important;width:130px;display:none;" id="backToTop">
+    <div class="fixed-bottom ml-auto mr-3 text-center" style="height: 50px !important;width:130px;display:none;" id="backToTop">
       <!-- <div class="col-2 offset-7 col-sm-3 offset-sm-9 col-md-2 offset-md-10 text-center"> -->
       <div class="text-center">
-        <a class="btn btn-sm btn-outline-secondary bg-dark" href="#0">Back to top</a>
+        <a class="nav-link btn btn-sm btn-outline-secondary bg-dark" href="#0">Back to top</a>
       </div>
     </div>
   </main>
@@ -564,9 +587,9 @@
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="album.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="album.js"></script>
   <!-- MDB core JavaScript -->
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>

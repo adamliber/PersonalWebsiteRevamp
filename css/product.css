@@ -44,7 +44,7 @@ main{
   padding-top: 48px;
   margin-bottom: 10px;
   min-height: 100vh;
-  background-image: url("miscimages/grandCanyon.jpg");
+  background-image: url("../media/miscimages/grandCanyon.jpg");
   background-size: cover;
 }
 
@@ -73,7 +73,14 @@ main{
   background-color: #6c757d !important;
 }
 
-
+.modal-header{
+  border: 0;
+  padding: 16px !important;
+}
+.modal-content{
+  background-color:  rgba(256,256,256,0.8);
+  border: 2 solid red;
+}
 .modal-body > .card-img-top{
     height: 75vh !important;
 }

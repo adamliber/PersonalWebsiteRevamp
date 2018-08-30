@@ -79,6 +79,7 @@
 
 .timeline-body > p,
 .timeline-body > ul {
+    margin-top: 12px;
     margin-bottom: 0;
     padding: 0px;
 }

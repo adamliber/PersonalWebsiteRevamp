@@ -2,7 +2,7 @@
 
 var $root = $('html, body');
 
-$('a').click(function(){
+$('.nav-link').click(function(){
 			$('html, body').animate({
 
 				scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
@@ -27,9 +27,22 @@ $(function () {
 wow.init();
 });
 
-window.onbeforeunload = function () {
-  // window.scrollTo(0, 0);
-};
+// window.onbeforeunload = function () {
+//   // window.scrollTo(0, 0);
+// };
+
+$('.readMore').on('click', function(e){
+	console.log('this');
+	if(e.currentTarget.innerHTML.includes('more') )
+	{
+		e.currentTarget.innerHTML = ' read less <i class="fa fa-angle-up" aria-hidden="true" ></i>';
+	}
+	else
+	{
+		e.currentTarget.innerHTML = ' read more <i class="fa fa-angle-down" aria-hidden="true" ></i>';
+	}
+
+});
 
 window.onscroll = function() {
   scrolldown();

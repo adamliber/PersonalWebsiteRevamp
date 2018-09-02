@@ -50,6 +50,9 @@ main{
   margin-bottom: 10px;
   min-height: 100vh;
   background-image: url("../media/miscimages/grandCanyon.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -94,6 +97,9 @@ main{
 @media (max-width: 767px) {
   .modal-body > .card-img-top{
         height: 50vh !important;
+  }
+  .jumbotron{
+    background-attachment:scroll;
   }
 }
 .modal-footer{

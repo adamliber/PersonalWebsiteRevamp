@@ -99,6 +99,7 @@ main{
         height: 50vh !important;
   }
   .jumbotron{
+    /*  this fixes background-size: cover for iPhone (safari mobile)*/
     background-attachment:scroll;
   }
 }

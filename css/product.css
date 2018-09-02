@@ -96,6 +96,13 @@ main{
         height: 50vh !important;
   }
 }
+.modal-footer{
+  padding: 0px;
+  z-index: 2100;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
 .modal-footer a, .modal-footer p{
   font-size: 14px;
   margin: 0px;
@@ -113,12 +120,6 @@ main{
   border-radius: 3px;
 }
 
-.carousel .modal-footer{
-  padding: 0px;
-  padding-right:20px;
-
-   /* background-image: linear-gradient(transparent,rgba(0,0,0,0.8) ); */
-}
 
 .card-img-top{
   height: 200px !important;

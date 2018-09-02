@@ -63,8 +63,8 @@
               projects
             </a>
             <div class="dropdown-menu text-right text-md-left w-25 ml-auto bg-dark" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item text-light nav-link" href="#technical">technical</a>
-              <a class="dropdown-item text-light nav-link" href="#creative">creative</a>
+              <a class="dropdown-item text-light nav-link px-3" href="#technical">technical</a>
+              <a class="dropdown-item text-light nav-link px-3" href="#creative">creative</a>
             </div>
           </li>
         </ul>
@@ -246,8 +246,8 @@
         <div class="row">
           <!-- Mobile project -->
           <div class="col-sm-6 col-lg-4 animated wow fadeIn" data-wow-delay="0s" data-wow-offset="80">
-            <div class="card mb-4 border-0">
-              <div id="mobileProject" class="card-img-top">
+            <div id="mobileProject" class="card mb-4 border-0">
+              <div  class="card-img-top">
 
                 <div class="embed-responsive embed-responsive-16by9 d-block my-auto">
                   <video src="media/loanerAppDemo.mov" controls></video>
@@ -268,14 +268,14 @@
           </div>
           <!-- hasbro projects -->
           <div class="col-sm-6 col-lg-4 animated wow fadeIn" data-wow-delay="0.4s" data-wow-offset="80">
-            <div class="card mb-4 border-0">
-              <div id="hasbroProjects" class="carousel slide card-img-top" data-ride="carousel">
+            <div id="hasbroProjects" class="card mb-4 border-0">
+              <div id="hasbroSlide" class="carousel slide card-img-top" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#hasbroProjects" data-slide-to="0" class="active"></li>
-                  <li data-target="#hasbroProjects" data-slide-to="1"></li>
-                  <li data-target="#hasbroProjects" data-slide-to="2"></li>
-                  <li data-target="#hasbroProjects" data-slide-to="3"></li>
-                  <li data-target="#hasbroProjects" data-slide-to="4"></li>
+                  <li data-target="#hasbroSlide" data-slide-to="0" class="active"></li>
+                  <li data-target="#hasbroSlide" data-slide-to="1"></li>
+                  <li data-target="#hasbroSlide" data-slide-to="2"></li>
+                  <li data-target="#hasbroSlide" data-slide-to="3"></li>
+                  <li data-target="#hasbroSlide" data-slide-to="4"></li>
                 </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item active h-100">
@@ -295,11 +295,11 @@
                   </div>
 
                 </div>
-                <a class="carousel-control-prev" href="#hasbroProjects" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#hasbroSlide" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#hasbroProjects" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#hasbroSlide" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -317,8 +317,8 @@
           </div>
           <!-- marshall project -->
           <div  class="col-sm-6 col-lg-4 animated wow fadeIn" data-wow-delay="0.8s" data-wow-offset="80">
-            <div class="card mb-4 border-0">
-              <div id="marshallProjects" class="card-img-top">
+            <div id="marshallProjects" class="card mb-4 border-0">
+              <div  class="card-img-top">
 
                 <img class="d-block mx-auto mh-100 mw-100" src="media/miscimages/marshallMatters2.PNG" alt="First slide">
 
@@ -338,13 +338,13 @@
 
           <!-- MatLab projects -->
           <div class="col-sm-6 col-lg-4 animated wow fadeIn" data-wow-delay="0.4s" data-wow-offset="80">
-            <div class="card mb-4 border-0">
-              <div id="matlabProjects" class="carousel slide card-img-top" data-ride="carousel">
+            <div id="matlabProjects" class="card mb-4 border-0">
+              <div id="matlabSlide" class="carousel slide card-img-top" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#matlabProjects" data-slide-to="0" class="active"></li>
-                  <li data-target="#matlabProjects" data-slide-to="1"></li>
-                  <li data-target="#matlabProjects" data-slide-to="2"></li>
-                  <li data-target="#matlabProjects" data-slide-to="3"></li>
+                  <li data-target="#matlabSlide" data-slide-to="0" class="active"></li>
+                  <li data-target="#matlabSlide" data-slide-to="1"></li>
+                  <li data-target="#matlabSlide" data-slide-to="2"></li>
+                  <li data-target="#matlabSlide" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item active h-100">
@@ -360,11 +360,11 @@
                     <img class="d-block mx-auto mh-100 mw-100" src="media/matlab/explodingprojectile.jpg" alt="Fourth slide">
                   </div>
                 </div>
-                <a class="carousel-control-prev " href="#matlabProjects" role="button" data-slide="prev">
+                <a class="carousel-control-prev " href="#matlabSlide" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next " href="#matlabProjects" role="button" data-slide="next">
+                <a class="carousel-control-next " href="#matlabSlide" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -392,46 +392,66 @@
 
           <!-- graphic projects -->
           <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-offset="80">
-            <div class="card mb-4 border-0">
-
-              <div id="graphicProjects" class="carousel slide card-img-top" data-ride="carousel">
+            <div id="graphicProjects" class="card mb-4 border-0">
+              <div id="graphicSlide"  class="carousel slide card-img-top" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#graphicProjects" data-slide-to="0" class="active"></li>
-                  <li data-target="#graphicProjects" data-slide-to="1"></li>
-                  <li data-target="#graphicProjects" data-slide-to="2"></li>
-                  <li data-target="#graphicProjects" data-slide-to="3"></li>
-                  <li data-target="#graphicProjects" data-slide-to="4"></li>
-                  <li data-target="#graphicProjects" data-slide-to="5"></li>
-                  <li data-target="#graphicProjects" data-slide-to="6"></li>
+                  <li data-target="#graphicSlide" data-slide-to="0" class="active"></li>
+                  <li data-target="#graphicSlide" data-slide-to="1"></li>
+                  <li data-target="#graphicSlide" data-slide-to="2"></li>
+                  <li data-target="#graphicSlide" data-slide-to="3"></li>
+                  <li data-target="#graphicSlide" data-slide-to="4"></li>
+                  <li data-target="#graphicSlide" data-slide-to="5"></li>
+                  <li data-target="#graphicSlide" data-slide-to="6"></li>
                 </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item active h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/catchawave.jpg" alt="First slide">
+                    <div class="modal-footer fixed-bottom border-0">
+                      <p class="text-light">  Catch-a-Wave  </p>
+                    </div>
                   </div>
                   <div class="carousel-item h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/headbump.jpg" alt="First slide">
+                    <div class="modal-footer fixed-bottom border-0">
+                      <p class="text-light"> Head-Bump  </p>
+                    </div>
                   </div>
                   <div class="carousel-item h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/joojoo.jpg" alt="First slide">
+                    <div class="modal-footer fixed-bottom border-0">
+                      <p class="text-light">  JooJoo Smokes  </p>
+                    </div>
                   </div>
                   <div class="carousel-item h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/konnect2.png" alt="First slide">
+                    <div class="modal-footer fixed-bottom border-0">
+                      <p class="text-light">  Konnect Magazine  </p>
+                    </div>
                   </div>
                   <div class="carousel-item h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/cvam.jpg" alt="First slide">
+                    <div class="modal-footer fixed-bottom border-0">
+                    <p class="text-light text-right">  Chasing Value Asset Management  </p>
+                    </div>
                   </div>
                   <div class="carousel-item h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/lakersNow.png" alt="First slide">
+                    <div class="modal-footer fixed-bottom border-0">
+                      <p class="text-light">  Lakers Now  </p>
+                    </div>
                   </div>
                   <div class="carousel-item h-100">
                     <img class="d-block mx-auto mh-100 mw-100" src="media/graphicdesignlogos/panther.png" alt="First slide">
+                    <div class="modal-footer fixed-bottom border-0">
+                      <p class="text-light">  Yula Panther 2D </p>
+                    </div>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#graphicProjects" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#graphicSlide" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#graphicProjects" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#graphicSlide" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -451,44 +471,59 @@
           </div>
           <!-- writing projects -->
           <div class="col-sm-6 col-lg-4 animated wow fadeIn" data-wow-delay="0.4s" data-wow-offset="80">
-            <div class="card mb-4 border-0">
-              <div id="writingProjects" class="carousel slide card-img-top" data-ride="carousel">
+            <div id="writingProjects" class="card mb-4 border-0">
+              <div  id="writingSlide" class="carousel slide card-img-top" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#writingProjects" data-slide-to="0" class="active"></li>
-                  <li data-target="#writingProjects" data-slide-to="1"></li>
-                  <li data-target="#writingProjects" data-slide-to="2"></li>
-                  <li data-target="#writingProjects" data-slide-to="3"></li>
-                  <li data-target="#writingProjects" data-slide-to="4"></li>
+                  <li data-target="#writingSlide" data-slide-to="0" class="active"></li>
+                  <li data-target="#writingSlide" data-slide-to="1"></li>
+                  <li data-target="#writingSlide" data-slide-to="2"></li>
+                  <li data-target="#writingSlide" data-slide-to="3"></li>
+                  <li data-target="#writingSlide" data-slide-to="4"></li>
                 </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item h-100 active">
-                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/leger.jpg" alt="First slide">
+                      <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/leger.jpg" alt="leger">
+                      <div class="modal-footer fixed-bottom border-0">
+                          <a class="text-info" href="media/writing/PartiedeCartes.pdf" target="_blank"><i class="fas fa-paperclip" aria-hidden="true" ></i> Soldiers Playing Cards</a>
+                      </div>
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/bauhaus.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/bauhaus.jpg" alt="bauhaus">
+                    <div class="modal-footer fixed-bottom border-0">
+                      <a class="text-info" href="media/writing/Bauhaus.pdf" target="_blank"><i class="fas fa-paperclip" aria-hidden="true" ></i> The bauhaus </a>
+                    </div>
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/boy_bitten_by_a_lizard.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/boy_bitten_by_a_lizard.jpg" alt="boy_bitten_by_a_lizard">
+                    <div class="modal-footer fixed-bottom border-0">
+                       <a class="text-info" href="media/writing/BBBAL.pdf" target="_blank"><i class="fas fa-paperclip" aria-hidden="true" ></i> The Bite </a>
+                     </div>
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/noexit.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/noexit.jpg" alt="noexit">
+                    <div class="modal-footer fixed-bottom border-0">
+                      <a class="text-info" href="media/writing/hell.pdf" target="_blank"><i class="fas fa-paperclip" aria-hidden="true" ></i> The Human Condition </a>
+                    </div>
                   </div>
                   <div class="carousel-item h-100">
-                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/thejoker.jpg" alt="First slide">
+                    <img class="d-block mx-auto mh-100 mw-100" src="media/writingimages/thejoker.jpg" alt="thejoker">
+                    <div class="modal-footer fixed-bottom border-0">
+                       <a class="text-info" href="media/writing/joker.pdf" target="_blank"><i class="fas fa-paperclip" aria-hidden="true" ></i> No Joke </a>
+                    </div>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#writingProjects" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#writingSlide" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#writingProjects" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#writingSlide" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
               </div>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-light text-left">Writing</small>
+                  <small class="text-light text-left">Creative Writing</small>
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary " data-toggle="modal" data-target="#modal" data-project="writingProjects">View</button>
 
@@ -500,14 +535,14 @@
           </div>
           <!-- blender projects -->
           <div class="col-sm-6 col-lg-4 animated wow fadeIn" data-wow-delay="0.8s" data-wow-offset="80">
-            <div class="card mb-4 border-0">
-              <div id="blenderProjects" class="carousel slide card-img-top" data-ride="carousel">
+            <div id="blenderProjects" class="card mb-4 border-0">
+              <div  id="blenderSlide" class="carousel slide card-img-top" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#blenderProjects" data-slide-to="0" class="active"></li>
-                  <li data-target="#blenderProjects" data-slide-to="1"></li>
-                  <li data-target="#blenderProjects" data-slide-to="2"></li>
-                  <li data-target="#blenderProjects" data-slide-to="3"></li>
-                  <li data-target="#blenderProjects" data-slide-to="4"></li>
+                  <li data-target="#blenderSlide" data-slide-to="0" class="active"></li>
+                  <li data-target="#blenderSlide" data-slide-to="1"></li>
+                  <li data-target="#blenderSlide" data-slide-to="2"></li>
+                  <li data-target="#blenderSlide" data-slide-to="3"></li>
+                  <li data-target="#blenderSlide" data-slide-to="4"></li>
                 </ol>
                 <div class="carousel-inner h-100">
                   <div class="carousel-item active h-100">
@@ -524,11 +559,11 @@
                   </div>
 
                 </div>
-                <a class="carousel-control-prev" href="#blenderProjects" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#blenderSlide" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#blenderProjects" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#blenderSlide" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -536,7 +571,7 @@
 
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-light">3D Modeling</small>
+                  <small class="text-light">Hobby 3D Modeling</small>
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modal" data-project="blenderProjects">View</button>
                   </div>
@@ -546,8 +581,8 @@
           </div>
           <!-- AG4P video -->
           <div class="col-sm-6 col-lg-4 animated wow fadeIn" data-wow-delay="0s" data-wow-offset="80">
-            <div class="card mb-4 border-0">
-              <div id="ag4p" class="card-img-top">
+            <div id="ag4p" class="card mb-4 border-0">
+              <div  class="card-img-top">
 
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe src="https://www.youtube.com/embed/U3cY5nc1kug" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

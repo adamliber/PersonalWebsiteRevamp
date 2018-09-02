@@ -48,61 +48,65 @@ window.onscroll = function() {
   scrolldown();
 };
 
+
 var navbar = document.querySelector(".navbar");
 var dropdown = document.querySelector(".dropdown-menu");
 var headshot = document.querySelector(".navbar-brand img");
 var container = document.querySelector(".container");
 var navOffSet = navbar.offsetTop;
 
+// $( window ).resize(function() {
+// 	// account for change in offset for resized windows
+// 	 navOffSet = navbar.offsetTop;
+//
+// });
+
 function scrolldown() {
 
-  if (window.pageYOffset >= navOffSet)
-	{
-    container.classList.add("stickyNavOffset");
-		navbar.classList.add("fixed-top");
-    navbar.style.backgroundColor = "#21252B";
+	if (window.pageYOffset >= navOffSet)
+ {
+		container.classList.add("stickyNavOffset");
+	  navbar.classList.add("fixed-top");
+		navbar.style.backgroundColor = "#21252B";
 
-    if(window.pageYOffset > navOffSet+40)
-		{
-      headshot.style.height = "50px";
-    }
-		else
-		{
-       headshot.style.height = "80px";
-    }
-    document.querySelector("#backToTop").style.display = "block";
-
-  }
-	else
-	{
-    navbar.classList.remove("fixed-top");
-  	navbar.style.backgroundColor = "";
-    container.classList.remove("stickyNavOffset");
-    document.querySelector("#backToTop").style.display = "none";
-  }
-
+		if(window.pageYOffset > navOffSet+40)
+	 {
+			headshot.style.height = "50px";
+		}
+	 else
+	 {
+			 headshot.style.height = "80px";
+		}
+		document.querySelector("#backToTop").style.display = "block";
+	}
+ else
+ {
+		navbar.classList.remove("fixed-top");
+	 navbar.style.backgroundColor = "";
+		container.classList.remove("stickyNavOffset");
+		document.querySelector("#backToTop").style.display = "none";
+	}
 }
 
 $('#resumeLink').on('click', function(){
-
 	ga('send', 'event', {
 	    eventCategory: 'resume',
 	    eventAction: 'click',
 	    eventLabel: event.target.href
 	  });
-
 });
 
 $('#modal').on('show.bs.modal', function (event)
 {
   var button = $(event.relatedTarget); // Button that triggered the modal
   var projectName = button.data('project'); // Extract info from data-* attributes
-	var projectInfo = $("#" + projectName);
-
+	var projectInfo = $("#" + projectName).find('.card-img-top');
+	var projectCaption = $("#" + projectName).find('.card-body small');
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this);
 	modal.find('.modal-body').html(projectInfo.clone() );
+	modal.find('.modal-header').prepend(projectCaption.clone() );
 
 });
 
@@ -110,4 +114,5 @@ $('#modal').on('hide.bs.modal', function (event)
 {
   var modal = $(this);
 	modal.find('.modal-body').html('');
+	modal.find('.modal-header small').remove();
 });
